@@ -109,7 +109,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
-BUILD_WITHOUT_VENDOR := true
+#BUILD_WITHOUT_VENDOR := true
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /mnt/vendor/persist:/persist
@@ -144,7 +144,7 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/temp
 BOARD_VNDK_VERSION := current
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
+BOARD_SYSTEMSDK_VERSION := 29
 
 # Inherit proprietary version
 -include vendor/xiaomi/sdm439-common/BoardConfigVendor.mk

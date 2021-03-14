@@ -88,13 +88,6 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/vendor_props.mk
 
-# RCS
-PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
-
 # Secure Lock
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/securelock.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/securelock.xml

@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
 
+# Properties
+-include $(LOCAL_PATH)/vendor_props.mk
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \

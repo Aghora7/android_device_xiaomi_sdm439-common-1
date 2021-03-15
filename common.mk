@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti
+    audio.bluetooth.default
 
 #CNE
 PRODUCT_PACKAGES += \

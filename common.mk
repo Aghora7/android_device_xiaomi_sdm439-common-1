@@ -94,6 +94,11 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcutils_shim \
+    libqsapshim
+    
 # Secure Lock
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/securelock.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/securelock.xml
